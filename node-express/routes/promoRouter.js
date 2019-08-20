@@ -44,7 +44,7 @@ promoRouter
   })
   .post((req, res, next) => {
     res.statusCode = 403;
-    res.end("POST operation not supported on promotions" + req.params.promoId);
+    res.end("POST operation not supported on promotion" + req.params.promoId);
   })
   .put((req, res, next) => {
     res.write("Updating the promotion: " + req.params.promoId + "\n");

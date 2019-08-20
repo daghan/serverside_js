@@ -1,3 +1,7 @@
 node_modules
 node-html/node_modules
 node-express/node_modules
+node-mongo/node_modules
+node-mongoose/node_modules
+conFusionServer/node_modules
+mongodb
