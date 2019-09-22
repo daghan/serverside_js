@@ -1,0 +1,9 @@
+formatter:
+  bento.formatter.Stylish: {}
+tools:
+  r2c.eslint:
+    ignore:
+    - no-console
+    - quotes
+  r2c.flake8:
+    ignore: []
