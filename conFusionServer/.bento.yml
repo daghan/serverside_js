@@ -3,7 +3,7 @@ formatter:
 tools:
   r2c.eslint:
     ignore:
-    - no-console
     - quotes
+    - no-console
   r2c.flake8:
     ignore: []
