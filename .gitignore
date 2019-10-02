@@ -5,3 +5,4 @@ node-mongo/node_modules
 node-mongoose/node_modules
 conFusionServer/node_modules
 mongodb
+.bento
