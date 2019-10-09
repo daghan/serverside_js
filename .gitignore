@@ -6,3 +6,6 @@ node-mongoose/node_modules
 conFusionServer/node_modules
 mongodb
 .bento
+.vscode
+lectures
+.vscode/settings.json
