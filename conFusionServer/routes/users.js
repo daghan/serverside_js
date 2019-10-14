@@ -75,6 +75,17 @@ router
     });
   });
 
+router.get("/facebook/token", passport.authenticate("facebook-token"), (req, res) => {
+  console.log("I AM HERE");
+  console.log(req);
+  if (req.user) {
+    const token = authenticate.getToken({ _id: req.user._id });
+    res.statusCode = 200;
+    res.setHeader("Content-Type", "application/json");
+    res.json({ success: true, token, status: "You are successfully logged in!" });
+  }
+});
+
 router
   .route("/logout")
   .options(cors.corsWithOptions, (req, res) => {
@@ -82,7 +93,6 @@ router
   })
   .get(cors.cors, authenticate.verifyUser, (req, res, next) => {
     if (req.session) {
-      console.log("I am here");
       req.session.destroy();
       res.clearCookie("session-id");
       res.redirect("/");

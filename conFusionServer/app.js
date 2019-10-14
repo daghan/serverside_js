@@ -3,11 +3,7 @@ const express = require("express");
 const path = require("path");
 const logger = require("morgan");
 const mongoose = require("mongoose");
-// const session = require("express-session");
-// const FileStore = require("session-file-store")(session);
 const passport = require("passport");
-//const authenticate = require("./authenticate");
-// const config = require("./config");
 
 const indexRouter = require("./routes/index");
 const usersRouter = require("./routes/users");
