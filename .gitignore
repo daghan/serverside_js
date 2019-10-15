@@ -9,3 +9,5 @@ mongodb
 .vscode
 lectures
 .vscode/settings.json
+# Ignore bento tool run paths (this line added by `bento init`)
+.bento/
