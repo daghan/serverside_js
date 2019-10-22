@@ -11,6 +11,7 @@ const dishRouter = require("./routes/dishRouter");
 const promoRouter = require("./routes/promoRouter");
 const leaderRouter = require("./routes/leaderRouter");
 const uploadRouter = require("./routes/uploadRouter");
+const favoriteRouter = require("./routes/favoriteRouter");
 
 const url = "mongodb://localhost:27017/conFusion";
 const connect = mongoose.connect(url);
@@ -48,6 +49,7 @@ app.use(express.static(path.join(__dirname, "public")));
 app.use("/dishes", dishRouter);
 app.use("/promotions", promoRouter);
 app.use("/leaders", leaderRouter);
+app.use("/favorites", favoriteRouter);
 app.use("/imageUpload", uploadRouter);
 
 // catch 404 and forward to error handler

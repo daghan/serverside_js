@@ -76,8 +76,6 @@ router
   });
 
 router.get("/facebook/token", passport.authenticate("facebook-token"), (req, res) => {
-  console.log("I AM HERE");
-  console.log(req);
   if (req.user) {
     const token = authenticate.getToken({ _id: req.user._id });
     res.statusCode = 200;
